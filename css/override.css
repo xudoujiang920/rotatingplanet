@@ -43,3 +43,8 @@ a[href*="utm_campaign=blog-footer"] {
 .mobile-menu-icon {
   display: none !important;
 }
+
+/* 6. 修复：无平台 JS 时页脚被隐藏的问题，强制显示 */
+#s-footer-section-container .s-footer-section {
+  display: block !important;
+}
