@@ -1,0 +1,40 @@
+/* 覆盖样式：去除上线了/Strikingly 平台痕迹，修复纯静态下的显示问题 */
+
+/* 1. 隐藏平台徽标与建站广告 */
+#s-footer-section-container a[href*="strikingly"],
+#s-footer-section-container a[href*="sxl.cn"],
+.s-footer-section a[href*="strikingly"],
+.s-footer-section a[href*="sxl.cn"],
+[class*="strikingly-logo"],
+[id*="strikingly-logo"],
+#strikingly-tooltip-container,
+.s-strikingly-logo,
+.show-strikingly-logo .s-powered-by {
+  display: none !important;
+}
+
+/* 2. 懒加载元素在缺少平台 JS 时应正常显示 */
+.lazyload,
+.s-background-media,
+.s-section {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 3. 修复图片容器高度塌陷 */
+.s-ratio-box {
+  overflow: visible !important;
+}
+
+/* 4. 让导航在无 JS 时可用 */
+.navigator .nav {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 5. 移动端导航菜单按钮无 JS 时隐藏，避免出现无法点击的图标 */
+.s-mobile-nav-trigger,
+.nav-toggle,
+.mobile-menu-icon {
+  display: none !important;
+}
