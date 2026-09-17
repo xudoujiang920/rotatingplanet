@@ -1,6 +1,11 @@
 /* 覆盖样式：去除上线了/Strikingly 平台痕迹，修复纯静态下的显示问题 */
 
-/* 1. 隐藏平台徽标与建站广告 */
+/* 1b. 隐藏任何指向上线了平台的推广外链（如博客页脚的 blog-footer 广告） */
+a[href*="sxl.cn"],
+a[href*="strikingly.com"],
+a[href*="utm_campaign=blog-footer"] {
+  display: none !important;
+}
 #s-footer-section-container a[href*="strikingly"],
 #s-footer-section-container a[href*="sxl.cn"],
 .s-footer-section a[href*="strikingly"],
