@@ -153,11 +153,315 @@
     #s-content.s-font-nav_dropdown-thinnerhei .s-font-nav_dropdown:lang(zh-tw) {
       font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", 'PingFang TC','Microsoft JhengHei',"微軟正黑體",STXihei, serif;
     }
-  </style></div><div class="s-navbar-section"><div id="header-container" style="position:relative" class="navigator"><div class="container wide-container"><div class="sixteen columns header center"><div id="logo" class="logo ib"><div class="s-component s-image  "><div><div class="s-component-content"><div class="s-img-wrapper"><img alt="RotatingPlanet" title="RotatingPlanet" class="crop-default" data-description="" data-image-link="javascript:void(0);" src="images/d5d5d9_Fh_3LqXkXmZQF7ubbNzilF9GwSLX.png"/ loading="lazy"></div></div></div></div></div><div class="nav"><ul class="s-nav"><span><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="index.html"><span class="s-font-body">登陆星球 Welcome</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="index.html#news"><span class="s-font-body">通讯 News</span></a></li><li class="menu-dropdown"><a class="s-nav-item selected" target="_self" href="about.html"><span class="s-font-body">关于 About</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="project.html"><span class="s-font-body">项目 Project</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="membership.html"><span class="s-font-body">社群 Membership</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="resources.html"><span class="s-font-body">资源 Resources</span></a></li></span><span></span></ul><div id="navbarPopover"></div></div><div class="power-container"><div id="navbar-top-button" class="power"><div class="s-component s-image  "><div><div class="s-component-content"><div class="s-img-wrapper"><img alt="" title="" class="crop-default" data-description="" data-image-link="javascript:void(0);" src="images/45bba6_FuGuEhD_29q_JiX0hfvteT5NeB9F.png"/ loading="lazy"></div></div></div></div></div></div></div></div></div><div id="header-spacer"></div></div><div class="page-wrapper"><div id="prerendered-inline-theme-html"></div><ul style="display:block" class="slides s-page-2  "><li class="slide s-section-1 s-first-visible-section " id="section-f_4a80bdda-48e7-48ce-a64f-8a27b00a8ce9"><div class="waypoint"></div><div class="section-anchor"></div><div>
+  </style></div><div class="s-navbar-section"><div id="header-container" style="position:relative" class="navigator"><div class="container wide-container"><div class="sixteen columns header center"><div id="logo" class="logo ib"><div class="s-component s-image  "><div><div class="s-component-content"><div class="s-img-wrapper"><img alt="RotatingPlanet" title="RotatingPlanet" class="crop-default" data-description="" data-image-link="javascript:void(0);" src="images/d5d5d9_Fh_3LqXkXmZQF7ubbNzilF9GwSLX.png"/ loading="lazy"></div></div></div></div></div><div class="nav"><ul class="s-nav"><span><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="index.html"><span class="s-font-body">登陆星球 Welcome</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="index.html#news"><span class="s-font-body">通讯 News</span></a></li><li class="menu-dropdown"><a class="s-nav-item selected" target="_self" href="about.html"><span class="s-font-body">关于 About</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="project.html"><span class="s-font-body">项目 Project</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="membership.html"><span class="s-font-body">社群 Membership</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="resources.html"><span class="s-font-body">资源 Resources</span></a></li></span><span></span></ul><div id="navbarPopover"></div></div><div class="power-container"><div id="navbar-top-button" class="power"><div class="s-component s-image  "><div><div class="s-component-content"><div class="s-img-wrapper"><img alt="" title="" class="crop-default" data-description="" data-image-link="javascript:void(0);" src="images/45bba6_FuGuEhD_29q_JiX0hfvteT5NeB9F.png"/ loading="lazy"></div></div></div></div></div></div></div></div></div><div id="header-spacer"></div></div><div class="page-wrapper"><section id="portfolio-gallery" aria-label="作品集画廊">
+<style>
+#portfolio-gallery{background:#e8eaeb;width:100%;position:relative;overflow:hidden}
+#portfolio-gallery .pg-stage{max-width:1200px;margin:0 auto;position:relative;min-height:420px}
+#portfolio-gallery .pg-slide{display:none;align-items:center;gap:56px;padding:64px 90px 48px}
+#portfolio-gallery .pg-slide.pg-active{display:flex}
+#portfolio-gallery .pg-slide.pg-reverse{flex-direction:row-reverse}
+#portfolio-gallery .pg-fig{flex:0 0 38%;display:flex;justify-content:center;align-items:center}
+#portfolio-gallery .pg-fig img{max-width:100%;max-height:380px;height:auto;display:block}
+#portfolio-gallery .pg-body{flex:1;min-width:0}
+#portfolio-gallery h3{font-size:34px;font-weight:300;color:#333;margin:0 0 22px;letter-spacing:1px}
+#portfolio-gallery ul{list-style:disc;margin:0;padding-left:20px;font-size:14px;color:#555;line-height:2}
+#portfolio-gallery ul li a{color:#555;text-decoration:underline;text-underline-offset:3px}
+#portfolio-gallery ul li a:hover{color:#ae7561}
+#portfolio-gallery .pg-btn{display:inline-block;margin-top:30px;padding:10px 30px;border-radius:999px;background:#5f6b74;color:#fff;font-size:15px;text-decoration:none;letter-spacing:2px;transition:background .2s}
+#portfolio-gallery .pg-btn:hover{background:#434d54;color:#fff;text-decoration:none}
+#portfolio-gallery .pg-arrow{position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;font-size:46px;line-height:1;color:#333;cursor:pointer;padding:10px 16px;user-select:none;font-family:serif;z-index:2}
+#portfolio-gallery .pg-arrow:hover{color:#ae7561}
+#portfolio-gallery .pg-prev{left:14px}
+#portfolio-gallery .pg-next{right:14px}
+#portfolio-gallery .pg-dots{text-align:center;padding-bottom:34px}
+#portfolio-gallery .pg-dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#c4c6c7;margin:0 6px;cursor:pointer;border:none;padding:0}
+#portfolio-gallery .pg-dot.pg-on{background:#333}
+@media (max-width:760px){
+  #portfolio-gallery .pg-slide{flex-direction:column !important;gap:24px;padding:40px 56px 24px}
+  #portfolio-gallery .pg-fig{flex:none}
+  #portfolio-gallery .pg-fig img{max-height:240px}
+  #portfolio-gallery h3{font-size:26px}
+  #portfolio-gallery .pg-arrow{font-size:32px}
+}
+</style>
+<div class="pg-stage">
+  <button class="pg-arrow pg-prev" aria-label="上一张">&#8249;</button>
+
+  <div class="pg-slide pg-active">
+    <div class="pg-fig"><img src="images/slide-fieldtrip.png" alt="定制活动 Field Trip" loading="lazy"></div>
+    <div class="pg-body">
+      <h3>定制活动 <em style="font-style:italic">Field Trip</em></h3>
+      <ul>
+        <li>"走读者"在地探索与社区研究（青少年项目），2022至今</li>
+        <li><a href="blog-19b3db45c1b.html">青少年变电站创意设计科学冬令营</a>·广州市少年宫 2020</li>
+        <li>走读西关研学营·B612 阅读星球，2021</li>
+        <li>社区气象安全课·千禾社区基金会，2020</li>
+        <li>图书馆手册设计邀请赛·中山省立图书馆少儿部，2018</li>
+      </ul>
+      <a class="pg-btn" href="project.html">了解详情</a>
+    </div>
+  </div>
+
+  <div class="pg-slide">
+    <div class="pg-fig"><img src="images/slide-design.png" alt="教育产品设计" loading="lazy"></div>
+    <div class="pg-body">
+      <h3>教育产品设计</h3>
+      <ul>
+        <li><a href="#" data-needlink>UNDP「她× 数字未来」创造营</a>&nbsp;课程与教学工具支持（主设计）2023</li>
+        <li>社区图书角活动秘笈·肯德基小候鸟基金（主设计）2022</li>
+        <li>STEAM教学工具包·联想萤火虫公益课堂（主设计）2022</li>
+        <li>特需儿童居家学习园艺疗愈工具箱·广州少年宫（参与）2021</li>
+        <li>垃圾分类主题盒子·爱贝睿（主设计）2019</li>
+        <li>阅读盒子，健康盒子，好奇心实验室—一公斤盒子（主设计）2014~2017</li>
+        <li><a href="#" data-needlink>KFC阅读桶</a>·肯德基小候鸟基金（概念设计）2017</li>
+      </ul>
+      <a class="pg-btn" href="project.html">了解详情</a>
+    </div>
+  </div>
+
+  <div class="pg-slide">
+    <div class="pg-fig"><img src="images/slide-talk.png" alt="讲演分享" loading="lazy"></div>
+    <div class="pg-body">
+      <h3>讲演分享</h3>
+      <ul>
+        <li>一个教育产品的成长故事·不完全计划，2021.8</li>
+        <li>社区教育：丹麦经验与在地实践，2020.11</li>
+        <li>对儿童友好的世界：空间设计视角下的生活、教育与儿童观，2020.7</li>
+        <li>儿童文学的学习之道，2020.3</li>
+        <li>我在丹麦学早教，2019.7</li>
+        <li>世界上最好的创造力教室在哪里，2018.9</li>
+        <li>博物馆里的设计思维，2017.2</li>
+      </ul>
+      <a class="pg-btn" href="project.html">了解详情</a>
+    </div>
+  </div>
+
+  <div class="pg-slide">
+    <div class="pg-fig"><img src="images/slide-publish.png" alt="出版" loading="lazy"></div>
+    <div class="pg-body">
+      <h3>出版</h3>
+      <ul>
+        <li>入选文集《面向青少年的博物馆教育》，暨南大学出版社，2019</li>
+        <li>入选文集《100 位教育工作者谈在线教育》，群言出版社，2022</li>
+      </ul>
+      <a class="pg-btn" href="project.html">了解详情</a>
+    </div>
+  </div>
+
+  <div class="pg-slide pg-reverse">
+    <div class="pg-fig"><img src="images/slide-podcast.png" alt="星球放送局" loading="lazy"></div>
+    <div class="pg-body">
+      <h3>播客</h3>
+      <ul>
+        <li><a href="#" data-needlink>星球放送局</a></li>
+        <li><a href="#" data-needlink>即兴撤退</a></li>
+      </ul>
+      <a class="pg-btn" href="#" data-needlink style="background:none;border:1.5px solid #333;color:#333">即兴听听</a>
+    </div>
+  </div>
+
+  <button class="pg-arrow pg-next" aria-label="下一张">&#8250;</button>
+</div>
+<div class="pg-dots"></div>
+<script>
+(function(){
+  var root=document.getElementById('portfolio-gallery');
+  if(!root||root.dataset.init)return;root.dataset.init='1';
+  var slides=root.querySelectorAll('.pg-slide'),dotsBox=root.querySelector('.pg-dots'),cur=0;
+  slides.forEach(function(s,i){
+    var d=document.createElement('button');d.className='pg-dot'+(i===0?' pg-on':'');d.setAttribute('aria-label','第'+(i+1)+'张');
+    d.onclick=function(){go(i)};dotsBox.appendChild(d);
+  });
+  var dots=root.querySelectorAll('.pg-dot');
+  function go(n){
+    slides[cur].classList.remove('pg-active');dots[cur].classList.remove('pg-on');
+    cur=(n+slides.length)%slides.length;
+    slides[cur].classList.add('pg-active');dots[cur].classList.add('pg-on');
+  }
+  root.querySelector('.pg-prev').onclick=function(){go(cur-1)};
+  root.querySelector('.pg-next').onclick=function(){go(cur+1)};
+  root.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-needlink]');
+    if(a)e.preventDefault();
+  });
+})();
+</script>
+</section><div id="prerendered-inline-theme-html"></div><ul style="display:block" class="slides s-page-2  "><li class="slide s-section-1 s-first-visible-section " id="section-f_4a80bdda-48e7-48ce-a64f-8a27b00a8ce9"><div class="waypoint"></div><div class="section-anchor"></div><div>
   <div class="lazyload   s-new-media-section s-section s-media-section   s-top-padding-half s-bottom-padding-half s-media-new-mobile-layout background-image" data-react-style="{}"><div class="container"><div class="columns sixteen"></div>
     <div class="s-mh s-layout-normal s-repeatable"><div class="s-section-item-wrapper "><div data-sorting-index="0" class=" columns sixteen s-repeatable-item"><div class="clearfix"><div class="new-media-item-wrapper"><div class=" media-top-text"><div class="s-item-text-group "><div class="s-title"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-title" style="white-space:pre-wrap"><div class="s-rich-text-wrapper" style="display: block;"><h4 class="#(className) h4Tag s-rich-text-wrapper" style="text-align: left; font-size: 20px;"><span style="color: #555555;">自转星球是一个儿童工作室。</span></h4><h4 class="#(className) h4Tag" style="text-align: left; font-size: 20px;"><span style="color: #555555;">扎根于社区，以培育读写素养、开阔学习视野、激发创造自信为使命，联动在地资源与社会力量，致力在身边创建儿童友好、终身学习的成长社群。</span></h4></div></div></div></div></div><div class="s-item-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p style="text-align: left;">您可以移步微信公众号平台，关注 「星球Studio」了解到更多。</p></div></div></div></div></div></div></div></div></div></div></div>
   </div></div>
-</div></li><li class="slide s-section-2 s-s6-wrapper " id="section-f_9c0a6e0f-3bf1-417a-b94d-2a59d866d7ad"><div class="waypoint"></div><div class="section-anchor"></div><div><div class="lazyload  s-section s6-section css-73zjed   s-no-bg s-bg-white s-bg-dark-text  s-block-section s6-section-width-small background-image" style="background-color:#FFFFFF" data-react-style="{&quot;backgroundColor&quot;:&quot;#FFFFFF&quot;}"><div class="container"><div class="columns sixteen"><div id="2af389ce-1d16-4de4-a341-40b56e0e47ab" class="s-row" position="1,0"><div class="s-row-content "><div id="5348322b-2637-4572-a75a-19af53c2109f" position="1,0,0" class="s-col col-12"><div class="col-list col-align-undefined"><div id="c9865997-9a4c-4eb6-87d3-611deb004650" class="s-element-blockcomponentitem" position="1,0,0,0"><div position="1,0,0,0" class="s-element" columnsSize="1" elementsSize="4"><div class="s-element-content"><div class="s-component s-block s-block-smallfeatureleft s-block-blockcomponentitem "> <div><div><div class="s-block-item-inner clearfix" style="position:relative"><div class=""><div class="s-block-feature  s-rva left"><div class="six columns s-rva-media alpha"><div class="s-item-media-group"><div class="s-component s-media  "><div><div class="s-component-content"><div class="s-img-wrapper"><div class="s-ratio-box" style="max-width:415px;max-height:416px"><div class="s-ratio-fill" style="padding-bottom:100.24%"></div><div class="s-img-wrapper"><img alt="Section image" title="" class="lazyload crop-default" data-description="" data-image-link="javascript:void(0);" width="415" height="416" src="images/f109ae_Fl5gs0SnqAsUC2r_dNAl4fh_zGL3.png" data-src="images/f109ae_Fl5gs0SnqAsUC2r_dNAl4fh_zGL3.png"/ loading="lazy"></div></div></div></div></div></div></div></div><div class="ten columns s-rva-text omega quarter-offset-left"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h2 class="h2Tag" style="font-size:28px;">我是谁</h2></div></div></div></div><div class="s-item-subtitle"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><h6><div class="s-rich-text-wrapper" style="display: block;"><p class="#(className) s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper font-size-tag-custom s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper" style="font-size: 14px;"><span style="color: #555555;">哈喽，我是许豆浆。教育产品设计师、学习爱好者、儿童工作者。职业生涯历任出版行业、教育创新机构、互联网公司，为多家教育创新机构&amp;公共教育部门提供面向儿童的课程/产品/项目设计。</span></p><p class="#(className) s-rich-text-wrapper s-rich-text-wrapper font-size-tag-custom" style="font-size: 14px;"><span style="color: #555555;">我所做的工作，都是为了培育和滋养年轻一代（当然也包括我自己）的自主性、效能感、共情力、创造力。我们一起面对这个复杂多元的世界、创造蓬勃生机的未来。</span></p><p><span style="display: inline-block">&nbsp;</span></p></div></h6></div></div></div></div><div class="s-item-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><div class="s-rich-text-wrapper" style="display: block;"><p class="#(className) s-rich-text-wrapper s-rich-text-wrapper font-size-tag-custom s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper" style="font-size: 13px;"><span style="color: #d0b0a4;">·</span><span style="color: #ae7561;"> 2022 年 联合发起「走读皆城」少年项目，开启社区行走调研、培养思辨表达能力</span></p><p class="#(className) s-rich-text-wrapper s-rich-text-wrapper font-size-tag-custom" style="font-size: 13px;"><span style="color: #d0b0a4;">·</span><span style="color: #ae7561;"> 2020 年 创建「自转星球」儿童线下空间，专研读写能力素养、培育儿童友好社群</span></p><p class="#(className) #(className) font-size-tag-custom" style="font-size: 13px;"><span style="color: #ae7561;">· 2019 年 赴丹麦参加儿童教育与文化游学项目</span></p><p class="#(className) font-size-tag-custom" style="font-size: 13px;"><span style="color: #ae7561;">· 2018 年 加入「爱贝睿」教育科技公司</span></p><p class="#(className) font-size-tag-custom" style="font-size: 13px;"><span style="color: #ae7561;">· 2014 年 加入「一公斤盒子」团队</span></p><p class="#(className) #(className) font-size-tag-custom" style="font-size: 13px;"><span style="color: #ae7561;">· 2006 年 开通</span><span style="color: #ae7561;"><a style="color: #ae7561;" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzA5NTg4MzkxNg==&amp;scene=124#wechat_redirect" data-type="" target="_blank">「自转星球」公众号</a></span></p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="787694a0-77fe-4b8e-b6e2-28e98eacde8e" class="s-element-separator" position="1,0,0,1"><div position="1,0,0,1" class="s-element" columnsSize="1" elementsSize="4"><div class="s-element-content"><div class="s-component s-block s-block-separator "> <div><div><div class="s-block-item-inner clearfix" style="position:relative"><div class=""><div class="s-separator"><div class="s-separator-content"><div class="separator"></div></div></div></div></div></div></div></div></div></div></div><div id="653477d4-8880-494a-a828-2bcb331e7758" class="s-element-richtext" position="1,0,0,2"><div position="1,0,0,2" class="s-element" columnsSize="1" elementsSize="4"><div class="s-element-content"><div class="s-component s-block s-block-richtext "> <div><div><div class="s-block-item-inner clearfix" style="position:relative"><div class=""><div class="s-component s-text s-item-text  "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p style="font-size:42px;">作品集</p></div></div></div></div></div></div></div></div></div></div></div><div id="653477d4-8880-494a-a828-2bcb331e7758" class="s-element-richtext" position="1,0,0,3"><div position="1,0,0,3" class="s-element" columnsSize="1" elementsSize="4"><div class="s-element-content"><div class="s-component s-block s-block-richtext "> <div><div><div class="s-block-item-inner clearfix" style="position:relative"><div class=""><div class="s-component s-text s-item-text  "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>定制活动 <strong><span class="#(className)" style="color:#ffa64d;">| </span></strong>产品设计<strong><span class="#(className)" style="color:#ffa64d;"> |</span></strong> 演讲分享 <strong><span class="#(className)" style="color:#ffa64d;">| </span></strong>媒体计划<strong><span class="#(className)" style="color:#ffa64d;"> |</span></strong> 出版文章</p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="waypoint"></div></li></ul><div id="prerendered-inline-theme-html"></div></div><div id="strikingly-tooltip-container"></div><div id="s-footer-section-container" class=""><div class="lazyload  s-no-bg  s-footer-section s-new-footer-section s-section show-strikingly-logo    new-footer-hyperlink-style   background-image" data-react-style="{}"><div class="container s-layout-grid s-layout-image"><div class="clearfix flex-layout-wrap "><div class="columns half-fixed img item-column left-align-default-on-desktop four "><div class="s-footer-text"><div class="s-component s-image   "><div><div class="s-component-content"><div class="s-img-wrapper"><div class="s-ratio-box" style="max-width:300px;max-height:155px"><div class="s-ratio-fill" style="padding-bottom:51.67%"></div><div class="s-img-wrapper"><img alt="Section image" title="" class="lazyload crop-default" data-description="" data-image-link="javascript:void(0);" width="300" height="155" src="images/620b06_Fvd39nNe7pOaxY63oLTLjArHnLC3.png" data-src="images/620b06_Fvd39nNe7pOaxY63oLTLjArHnLC3.png"/ loading="lazy"></div></div></div></div></div></div></div></div><div class="columns half-fixed item-column left-align-default-on-desktop four "><div class="s-footer-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p><strong>关于</strong></p><p>我们的使命</p><p>儿童文学地图</p></div></div></div></div></div><div class="columns half-fixed item-column left-align-default-on-desktop four "><div class="s-footer-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p><strong>资源</strong></p><p>读写创作项目</p><p>媒体资源工具包</p></div></div></div></div></div><div class="columns half-fixed item-column left-align-default-on-desktop four "><div class="s-footer-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p><strong>联系</strong></p><p>xuyihong5@<wbr>163.com</p><p>xudoujiang920@<wbr>gmail.com</p></div></div></div></div></div></div><div class="clearfix has-copy-right"><div class="columns no-float sixteen"><div class="separate-line"></div></div><div class="clearfix flex-layout-wrap"><div class="columns flex-1 is-single-column-on-mobile left-align-default-on-desktop no-float s-text-color-gray sixteen is-single-column"><div class="s-footer-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p style="font-size: 11px; text-align: center;">@RotatingPlanet EduDesignStudio 2021</p><p style="font-size: 11px; text-align: center;">All Rights Reserved</p></div></div></div></div></div></div></div></div></div></div><div class="s-footer-logo-wrapper" style="width:100%"></div><div id="ecommerce-drawer" class="s-category-drawer-wrapper"></div><div id="blog-category-drawer" class="s-category-drawer-wrapper"></div><div class="s-floated-components"><div></div><div><div id="s-ecommerce-shopping-cart-wrapper" class="s-ecommerce-shopping-cart-wrapper no-cart"></div><div id="fixedContainer"><div id="fixedLoginContainer" class="fixed-login-container"></div><div id="fixedMultiLangSwitcher" class="fixed-multi-lang-container"></div></div></div><div id="s-new-mobile-actions-wrapper" class=""><ul class="s-mobile-actions clearfix s-font-body"></ul></div></div><div class="social-thumbnail"><div id="lw-share-data" style="display:none"><div class="lws-title">自转星球</div><div class="lws-description">Website</div><div class="lws-image">images/default-sxl.jpg</div></div></div></div></div></div></div>
+</div></li><li class="slide s-section-2 s-s6-wrapper " id="section-f_9c0a6e0f-3bf1-417a-b94d-2a59d866d7ad"><div class="waypoint"></div><div class="section-anchor"></div><div><div class="lazyload  s-section s6-section css-73zjed   s-no-bg s-bg-white s-bg-dark-text  s-block-section s6-section-width-small background-image" style="background-color:#FFFFFF" data-react-style="{&quot;backgroundColor&quot;:&quot;#FFFFFF&quot;}"><div class="container"><div class="columns sixteen"><div id="2af389ce-1d16-4de4-a341-40b56e0e47ab" class="s-row" position="1,0"><div class="s-row-content "><div id="5348322b-2637-4572-a75a-19af53c2109f" position="1,0,0" class="s-col col-12"><div class="col-list col-align-undefined"><div id="c9865997-9a4c-4eb6-87d3-611deb004650" class="s-element-blockcomponentitem" position="1,0,0,0"><div position="1,0,0,0" class="s-element" columnsSize="1" elementsSize="4"><div class="s-element-content"><div class="s-component s-block s-block-smallfeatureleft s-block-blockcomponentitem "> <div><div><div class="s-block-item-inner clearfix" style="position:relative"><div class=""><div class="s-block-feature  s-rva left"><div class="six columns s-rva-media alpha"><div class="s-item-media-group"><div class="s-component s-media  "><div><div class="s-component-content"><div class="s-img-wrapper"><div class="s-ratio-box" style="max-width:415px;max-height:416px"><div class="s-ratio-fill" style="padding-bottom:100.24%"></div><div class="s-img-wrapper"><img alt="Section image" title="" class="lazyload crop-default" data-description="" data-image-link="javascript:void(0);" width="415" height="416" src="images/f109ae_Fl5gs0SnqAsUC2r_dNAl4fh_zGL3.png" data-src="images/f109ae_Fl5gs0SnqAsUC2r_dNAl4fh_zGL3.png"/ loading="lazy"></div></div></div></div></div></div></div></div><div class="ten columns s-rva-text omega quarter-offset-left"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h2 class="h2Tag" style="font-size:28px;">我是谁</h2></div></div></div></div><div class="s-item-subtitle"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><h6><div class="s-rich-text-wrapper" style="display: block;"><p class="#(className) s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper font-size-tag-custom s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper" style="font-size: 14px;"><span style="color: #555555;">哈喽，我是许豆浆。教育产品设计师、学习爱好者、儿童工作者。职业生涯历任出版行业、教育创新机构、互联网公司，为多家教育创新机构&amp;公共教育部门提供面向儿童的课程/产品/项目设计。</span></p><p class="#(className) s-rich-text-wrapper s-rich-text-wrapper font-size-tag-custom" style="font-size: 14px;"><span style="color: #555555;">我所做的工作，都是为了培育和滋养年轻一代（当然也包括我自己）的自主性、效能感、共情力、创造力。我们一起面对这个复杂多元的世界、创造蓬勃生机的未来。</span></p><p><span style="display: inline-block">&nbsp;</span></p></div></h6></div></div></div></div><div class="s-item-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><div class="s-rich-text-wrapper" style="display: block;"><p class="#(className) s-rich-text-wrapper s-rich-text-wrapper font-size-tag-custom s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper s-rich-text-wrapper" style="font-size: 13px;"><span style="color: #d0b0a4;">·</span><span style="color: #ae7561;"> 2022 年 联合发起「走读皆城」少年项目，开启社区行走调研、培养思辨表达能力</span></p><p class="#(className) s-rich-text-wrapper s-rich-text-wrapper font-size-tag-custom" style="font-size: 13px;"><span style="color: #d0b0a4;">·</span><span style="color: #ae7561;"> 2020 年 创建「自转星球」儿童线下空间，专研读写能力素养、培育儿童友好社群</span></p><p class="#(className) #(className) font-size-tag-custom" style="font-size: 13px;"><span style="color: #ae7561;">· 2019 年 赴丹麦参加儿童教育与文化游学项目</span></p><p class="#(className) font-size-tag-custom" style="font-size: 13px;"><span style="color: #ae7561;">· 2018 年 加入「爱贝睿」教育科技公司</span></p><p class="#(className) font-size-tag-custom" style="font-size: 13px;"><span style="color: #ae7561;">· 2014 年 加入「一公斤盒子」团队</span></p><p class="#(className) #(className) font-size-tag-custom" style="font-size: 13px;"><span style="color: #ae7561;">· 2006 年 开通</span><span style="color: #ae7561;"><a style="color: #ae7561;" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;__biz=MzA5NTg4MzkxNg==&amp;scene=124#wechat_redirect" data-type="" target="_blank">「自转星球」公众号</a></span></p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="787694a0-77fe-4b8e-b6e2-28e98eacde8e" class="s-element-separator" position="1,0,0,1"><div position="1,0,0,1" class="s-element" columnsSize="1" elementsSize="4"><div class="s-element-content"><div class="s-component s-block s-block-separator "> <div><div><div class="s-block-item-inner clearfix" style="position:relative"><div class=""><div class="s-separator"><div class="s-separator-content"><div class="separator"></div></div></div></div></div></div></div></div></div></div></div><div id="653477d4-8880-494a-a828-2bcb331e7758" class="s-element-richtext" position="1,0,0,2"><div position="1,0,0,2" class="s-element" columnsSize="1" elementsSize="4"><div class="s-element-content"><div class="s-component s-block s-block-richtext "> <div><div><div class="s-block-item-inner clearfix" style="position:relative"><div class=""><div class="s-component s-text s-item-text  "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p style="font-size:42px;">作品集</p></div></div></div></div></div></div></div></div></div></div></div><div id="653477d4-8880-494a-a828-2bcb331e7758" class="s-element-richtext" position="1,0,0,3"><div position="1,0,0,3" class="s-element" columnsSize="1" elementsSize="4"><div class="s-element-content"><div class="s-component s-block s-block-richtext "> <div><div><div class="s-block-item-inner clearfix" style="position:relative"><div class=""><div class="s-component s-text s-item-text  "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>定制活动 <strong><span class="#(className)" style="color:#ffa64d;">| </span></strong>产品设计<strong><span class="#(className)" style="color:#ffa64d;"> |</span></strong> 演讲分享 <strong><span class="#(className)" style="color:#ffa64d;">| </span></strong>媒体计划<strong><span class="#(className)" style="color:#ffa64d;"> |</span></strong> 出版文章</p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><!-- PORTFOLIO-SLIDER-START -->
+<!-- ============================================================
+     作品集轮播（静态重建版，替换原平台付费滑块组件）
+     如何修改：
+     · 增加一张幻灯片 = 复制一个 <div class="rp-slide"> ... </div> 块
+     · 删除一张幻灯片 = 删掉对应的 <div class="rp-slide"> 块
+     · 改文字/年份 = 直接改对应位置的文本
+     · 链接地址 = 把 href="#" 换成真实网址（带 TODO 标记的都是待填的）
+     · 左图 = 改 <img src="images/xxx"> ；播客这类的版式(图在右)已用 rp-reverse 类标出
+     ============================================================ -->
+<style>
+#portfolio-slider{background:#efefef;margin:40px auto 0;max-width:1180px;position:relative;overflow:hidden;font-family:inherit}
+#portfolio-slider *{box-sizing:border-box}
+.rp-viewport{overflow:hidden}
+.rp-track{display:flex;transition:transform .5s ease}
+.rp-slide{min-width:100%;display:flex;align-items:center;gap:48px;padding:56px 90px;min-height:460px}
+.rp-slide.rp-reverse{flex-direction:row-reverse}
+.rp-img{flex:0 0 34%;display:flex;justify-content:center;align-items:center}
+.rp-img img{max-width:100%;max-height:320px;object-fit:contain}
+.rp-body{flex:1}
+.rp-title{font-size:32px;font-weight:300;color:#4a4a4a;margin:0 0 22px;letter-spacing:1px}
+.rp-title em{font-style:italic;font-weight:300}
+.rp-list{list-style:disc;padding-left:20px;margin:0 0 26px;color:#5f6a72;font-size:14px;line-height:1.75}
+.rp-list li{margin-bottom:6px}
+.rp-list a{color:#7d97b3;text-decoration:underline}
+.rp-list a:hover{color:#5a7aa0}
+.rp-btn{display:inline-block;background:#5b6670;color:#fff;font-size:14px;padding:9px 26px;border-radius:20px;text-decoration:none;letter-spacing:2px}
+.rp-btn:hover{background:#48525b}
+.rp-arrow{position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;padding:10px;z-index:5;color:#444}
+.rp-arrow:hover{color:#000}
+.rp-prev{left:14px}.rp-next{right:14px}
+.rp-arrow svg{width:22px;height:38px;display:block}
+.rp-dots{display:flex;justify-content:center;gap:10px;padding:0 0 22px}
+.rp-dot{width:9px;height:9px;border-radius:50%;background:#b5b5b5;border:none;cursor:pointer;padding:0}
+.rp-dot.rp-active{background:#3d3d3d}
+@media (max-width:760px){
+  .rp-slide{flex-direction:column !important;gap:20px;padding:40px 56px;min-height:0;text-align:left}
+  .rp-img img{max-height:200px}
+  .rp-title{font-size:24px}
+}
+</style>
+
+<section id="portfolio-slider" aria-label="作品集">
+  <div class="rp-viewport">
+    <div class="rp-track">
+
+      <!-- 幻灯片 1：定制活动 Field Trip -->
+      <div class="rp-slide">
+        <div class="rp-img"><img src="images/slide-fieldtrip.jpg" alt="青少年变电站创意设计研学手册" loading="lazy"></div>
+        <div class="rp-body">
+          <h3 class="rp-title">定制活动 <em>Field Trip</em></h3>
+          <ul class="rp-list">
+            <li>「走读皆城」在地探索与社区探究（青少年项目），2022至今</li>
+            <!-- TODO: 填真实链接 -->
+            <li><a href="#">青少年变电站创意设计研学冬令营</a>·广州市少年宫，2020</li>
+            <li>走读西关研学营·B612 阅读星球，2021</li>
+            <li>社区气象安全课·千禾社区基金会，2020</li>
+            <!-- TODO: 填真实链接 -->
+            <li><a href="#">图书馆手册设计邀请赛</a>·中山省立图书馆少儿部，2018</li>
+          </ul>
+          <a class="rp-btn" href="#">了解详情</a>
+        </div>
+      </div>
+
+      <!-- 幻灯片 2：教育产品设计 -->
+      <div class="rp-slide">
+        <div class="rp-img"><img src="images/slide-design.png" alt="教育产品设计" loading="lazy"></div>
+        <div class="rp-body">
+          <h3 class="rp-title">教育产品设计</h3>
+          <ul class="rp-list">
+            <!-- TODO: 填真实链接 -->
+            <li><a href="#">UNDP「她× 数字未来」创造营</a>&nbsp;课程与教学工具支持（主设计）2023</li>
+            <li>社区图书角活动秘笈·肯德基小候鸟基金（主设计）2022</li>
+            <li>STEAM教学工具包·联想萤火虫公益课堂（主设计）2022</li>
+            <li>特需儿童居家学习园艺疗愈工具箱·广州少年宫（参与）2021</li>
+            <li>垃圾分类主题盒子·爱贝睿（主设计）2019</li>
+            <li>阅读盒子，健康盒子，好奇心实验室·一公斤盒子（主设计）2014~2017</li>
+            <!-- TODO: 填真实链接 -->
+            <li><a href="#">KFC阅读桶</a>·肯德基小候鸟基金（概念设计）2017</li>
+          </ul>
+          <a class="rp-btn" href="#">了解详情</a>
+        </div>
+      </div>
+
+      <!-- 幻灯片 3：讲演 -->
+      <div class="rp-slide">
+        <div class="rp-img"><img src="images/slide-talk.png" alt="讲演" loading="lazy"></div>
+        <div class="rp-body">
+          <h3 class="rp-title">讲演</h3>
+          <ul class="rp-list">
+            <li>一个教育产品的成长故事·不完全计划，2021.8</li>
+            <!-- TODO: 填真实链接 -->
+            <li><a href="#">社区教育：丹麦经验与在地实践</a>，2020.11</li>
+            <li>对儿童友好的世界：空间设计视角下的生活、教育与儿童观，2020.7</li>
+            <li>儿童文学的学习之道，2020.3</li>
+            <li>我在丹麦学早教，2019.7</li>
+            <!-- TODO: 填真实链接 -->
+            <li><a href="#">世界上最好的创造力教室在哪里</a>，2018.9</li>
+            <li>博物馆里的设计思维，2017.2</li>
+          </ul>
+          <a class="rp-btn" href="#">了解详情</a>
+        </div>
+      </div>
+
+      <!-- 幻灯片 4：播客（版式反转：文字在左，图在右） -->
+      <div class="rp-slide rp-reverse">
+        <div class="rp-img"><img src="images/slide-podcast.png" alt="星球放送局" loading="lazy"></div>
+        <div class="rp-body">
+          <h3 class="rp-title">播客</h3>
+          <ul class="rp-list">
+            <!-- TODO: 填真实链接 -->
+            <li><a href="#">星球放送局</a></li>
+            <!-- TODO: 填真实链接 -->
+            <li><a href="#">即兴撤退</a></li>
+          </ul>
+          <a class="rp-btn" href="#">即兴听听</a>
+        </div>
+      </div>
+
+      <!-- 幻灯片 5：出版 -->
+      <div class="rp-slide">
+        <div class="rp-img"><img src="images/slide-publish.png" alt="出版" loading="lazy"></div>
+        <div class="rp-body">
+          <h3 class="rp-title">出版</h3>
+          <ul class="rp-list">
+            <li>入选文集《面向青少年的博物馆教育》，暨南大学出版社，2019</li>
+            <li>入选文集《100 位教育工作者谈在线教育》，群言出版社，2022</li>
+          </ul>
+          <a class="rp-btn" href="#">了解详情</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="rp-arrow rp-prev" aria-label="上一张">
+    <svg viewBox="0 0 22 38" fill="none"><path d="M19 3 L4 19 L19 35" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+  </button>
+  <button class="rp-arrow rp-next" aria-label="下一张">
+    <svg viewBox="0 0 22 38" fill="none"><path d="M3 3 L18 19 L3 35" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+  </button>
+  <div class="rp-dots"></div>
+</section>
+
+<script>
+(function(){
+  var slider=document.getElementById('portfolio-slider');
+  if(!slider)return;
+  var track=slider.querySelector('.rp-track');
+  var slides=slider.querySelectorAll('.rp-slide');
+  var dotsBox=slider.querySelector('.rp-dots');
+  var cur=0;
+  slides.forEach(function(_,i){
+    var d=document.createElement('button');
+    d.className='rp-dot'+(i===0?' rp-active':'');
+    d.setAttribute('aria-label','第'+(i+1)+'张');
+    d.addEventListener('click',function(){go(i)});
+    dotsBox.appendChild(d);
+  });
+  var dots=slider.querySelectorAll('.rp-dot');
+  function go(i){
+    cur=(i+slides.length)%slides.length;
+    track.style.transform='translateX(-'+cur*100+'%)';
+    dots.forEach(function(d,k){d.classList.toggle('rp-active',k===cur)});
+  }
+  slider.querySelector('.rp-prev').addEventListener('click',function(){go(cur-1)});
+  slider.querySelector('.rp-next').addEventListener('click',function(){go(cur+1)});
+})();
+</script>
+<!-- PORTFOLIO-SLIDER-END -->
+
+<div class="waypoint"></div></li></ul><div id="prerendered-inline-theme-html"></div></div><div id="strikingly-tooltip-container"></div><div id="s-footer-section-container" class=""><div class="lazyload  s-no-bg  s-footer-section s-new-footer-section s-section show-strikingly-logo    new-footer-hyperlink-style   background-image" data-react-style="{}"><div class="container s-layout-grid s-layout-image"><div class="clearfix flex-layout-wrap "><div class="columns half-fixed img item-column left-align-default-on-desktop four "><div class="s-footer-text"><div class="s-component s-image   "><div><div class="s-component-content"><div class="s-img-wrapper"><div class="s-ratio-box" style="max-width:300px;max-height:155px"><div class="s-ratio-fill" style="padding-bottom:51.67%"></div><div class="s-img-wrapper"><img alt="Section image" title="" class="lazyload crop-default" data-description="" data-image-link="javascript:void(0);" width="300" height="155" src="images/620b06_Fvd39nNe7pOaxY63oLTLjArHnLC3.png" data-src="images/620b06_Fvd39nNe7pOaxY63oLTLjArHnLC3.png"/ loading="lazy"></div></div></div></div></div></div></div></div><div class="columns half-fixed item-column left-align-default-on-desktop four "><div class="s-footer-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p><strong>关于</strong></p><p>我们的使命</p><p>儿童文学地图</p></div></div></div></div></div><div class="columns half-fixed item-column left-align-default-on-desktop four "><div class="s-footer-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p><strong>资源</strong></p><p>读写创作项目</p><p>媒体资源工具包</p></div></div></div></div></div><div class="columns half-fixed item-column left-align-default-on-desktop four "><div class="s-footer-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p><strong>联系</strong></p><p>xuyihong5@<wbr>163.com</p><p>xudoujiang920@<wbr>gmail.com</p></div></div></div></div></div></div><div class="clearfix has-copy-right"><div class="columns no-float sixteen"><div class="separate-line"></div></div><div class="clearfix flex-layout-wrap"><div class="columns flex-1 is-single-column-on-mobile left-align-default-on-desktop no-float s-text-color-gray sixteen is-single-column"><div class="s-footer-text"><div class="s-component s-text   "><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p style="font-size: 11px; text-align: center;">@RotatingPlanet EduDesignStudio 2021</p><p style="font-size: 11px; text-align: center;">All Rights Reserved</p></div></div></div></div></div></div></div></div></div></div><div class="s-footer-logo-wrapper" style="width:100%"></div><div id="ecommerce-drawer" class="s-category-drawer-wrapper"></div><div id="blog-category-drawer" class="s-category-drawer-wrapper"></div><div class="s-floated-components"><div></div><div><div id="s-ecommerce-shopping-cart-wrapper" class="s-ecommerce-shopping-cart-wrapper no-cart"></div><div id="fixedContainer"><div id="fixedLoginContainer" class="fixed-login-container"></div><div id="fixedMultiLangSwitcher" class="fixed-multi-lang-container"></div></div></div><div id="s-new-mobile-actions-wrapper" class=""><ul class="s-mobile-actions clearfix s-font-body"></ul></div></div><div class="social-thumbnail"><div id="lw-share-data" style="display:none"><div class="lws-title">自转星球</div><div class="lws-description">Website</div><div class="lws-image">images/default-sxl.jpg</div></div></div></div></div></div></div>
 </div>
 <div id='fb-root'></div>
 <div id='app-script-root'></div>
